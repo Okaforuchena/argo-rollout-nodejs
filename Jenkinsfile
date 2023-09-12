@@ -5,7 +5,7 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('uo-dockerhub')
+    DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
     APP_NAME = "Okaforuchena/blue-green-rollout"
     }
     stages { 
