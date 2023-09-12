@@ -5,8 +5,8 @@ pipeline {
         timeout(time: 10, unit: 'MINUTES')
      }
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
-    APP_NAME = "Okaforuchena/uo-docker"
+    DOCKERHUB_CREDENTIALS = credentials('okaforuchena-dockerhub')
+    APP_NAME = "Okaforuchena/blue-green-rollout"
     }
     stages { 
         stage('SCM Checkout') {
