@@ -6,7 +6,7 @@ pipeline {
      }
     environment {
     DOCKERHUB_CREDENTIALS = credentials('karo-dockerhub')
-    APP_NAME = "Okaforuchena/blue-green-rollout"
+    APP_NAME = "Okaforuchena/uo-docker"
     }
     stages { 
         stage('SCM Checkout') {
